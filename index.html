@@ -25,6 +25,27 @@
       color: #666;
       font-size: 14px;
     }
+    input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.post {
+  background: #f1f5f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
   </style>
 </head>
 <body>
@@ -33,9 +54,64 @@
     <p>
       バイトに受かった体験談や、実際に働いた感想を共有するサービスです。
     </p>
-    <p class="note">
-      ※ 完全無料・匿名投稿を予定しています。
-    </p>
+
+    <hr />
+
+    <h2>体験を投稿する</h2>
+
+    <form>
+      <label>
+        店名・会社名<br />
+        <input type="text" placeholder="例：〇〇カフェ 渋谷店" />
+      </label>
+
+      <br /><br />
+
+      <label>
+        職種<br />
+        <input type="text" placeholder="例：カフェスタッフ、コンビニ" />
+      </label>
+
+      <br /><br />
+
+      <label>
+        面接の雰囲気<br />
+        <select>
+          <option>選択してください</option>
+          <option>和やか</option>
+          <option>普通</option>
+          <option>少し厳しい</option>
+        </select>
+      </label>
+
+      <br /><br />
+
+      <label>
+        働いた感想・一言アドバイス<br />
+        <textarea rows="4" placeholder="例：忙しいけど人間関係は良かった"></textarea>
+      </label>
+
+      <br /><br />
+
+      <button type="button">投稿する（※保存はされません）</button>
+    </form>
+
+    <hr />
+
+    <h2>みんなの体験（サンプル）</h2>
+
+    <div class="post">
+      <strong>〇〇カフェ（カフェスタッフ）</strong><br />
+      面接は和やか。<br />
+      忙しいけど先輩が優しかった。
+    </div>
+
+    <div class="post">
+      <strong>△△コンビニ（レジ）</strong><br />
+      普通の面接。<br />
+      深夜は楽だけど覚えること多め。
+    </div>
   </div>
 </body>
+
 </html>
